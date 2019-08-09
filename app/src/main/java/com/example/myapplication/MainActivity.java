@@ -17,6 +17,7 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -124,6 +125,8 @@ public class MainActivity extends AppCompatActivity implements MessageDialogFrag
                 mVoiceRecorder.stop();
             }
         });
+
+        Log.e("로그: ","로그 onCreate: ");
     }
 
     @Override
@@ -156,6 +159,7 @@ public class MainActivity extends AppCompatActivity implements MessageDialogFrag
         unbindService(mServiceConnection);
         mSpeechService = null;
 
+        Log.e("로그: ","로그 onStop: ");
         super.onStop();
     }
 

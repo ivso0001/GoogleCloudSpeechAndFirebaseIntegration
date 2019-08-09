@@ -36,7 +36,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-storage:18.1.1'
     implementation 'com.google.firebase:firebase-firestore:20.2.0'
 
-    implementation group: 'com.google.cloud', name: 'google-cloud-speech', version: '1.15.0'
+    implementation 'com.google.auth:google-auth-library-oauth2-http:0.16.2'
     implementation group: 'com.google.api.grpc', name: 'grpc-google-cloud-speech-v1', version: '1.15.0'
     implementation 'io.grpc:grpc-okhttp:1.21.0'
 
